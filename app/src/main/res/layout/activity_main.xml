@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:text="GESTIÓN \n DE FOTOS"
+        android:textSize="25dp"
+        android:background="#9ABBF1"
+        android:textStyle="normal|bold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/Tomar_Foto"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#6C2121"
+        android:drawableRight="@android:drawable/ic_menu_camera"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Tomar foto" />
+
+    <ImageView
+        android:id="@+id/Mostrar_Foto"
+        android:layout_width="410dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="120dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto" />
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="550dp"
+        android:text="ENVIAR A TRAVÉS DE"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:background="#9ABBF1"/>
+    <Button
+        android:id="@+id/Correo"
+        android:layout_width="150dp"
+        style="@style/Widget.Material3.Button"
+        android:textSize="20dp"
+        android:layout_marginTop="600dp"
+        android:layout_height="80dp"
+        android:drawableTop="@drawable/msj"
+        android:text="Correo"
+        android:backgroundTint="#6C2121"/>
+
+    <Button
+        android:id="@+id/Whatsapp"
+        android:layout_width="150dp"
+        style="@style/Widget.Material3.Button"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#6C2121"
+        android:drawableTop="@drawable/wh"
+        android:text="Whatsapp" />
+</RelativeLayout>
